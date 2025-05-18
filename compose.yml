@@ -1,0 +1,12 @@
+services:
+  couchserver:
+    image: couchdb:3.5.0
+    ports:
+      - "5984:5984"
+    environment:
+      - COUCHDB_USER=${COUCHDB_USER}
+      - COUCHDB_PASSWORD=${COUCHDB_PW}
+    volumes:
+      - ./data/couchdb:/opt/couchdb/data
+      - ./conf/local.ini:/opt/couchdb/etc/local.ini
+
