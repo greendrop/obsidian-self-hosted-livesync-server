@@ -27,7 +27,7 @@ cp .env.example .env
 
 ### `.env` ファイルを編集
 
-`COUCHDB_USER` と `COUCHDB_PASSWORD` を適切な値に変更します。
+`COUCHDB_USER` と `COUCHDB_PW` を適切な値に変更します。
 
 ```
 COUCHDB_USER=testuser
