@@ -1,6 +1,7 @@
 services:
   couchserver:
     image: couchdb:3.5.0
+    restart: unless-stopped
     ports:
       - "5984:5984"
     environment:
